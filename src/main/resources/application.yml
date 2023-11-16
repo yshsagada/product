@@ -1,0 +1,66 @@
+
+spring:
+  profiles:
+    default: local
+  kafka:
+    bootstrap-servers: localhost:9092
+  data:
+    redis:
+      host: localhost
+      port: 6379
+#  datasource:
+#    url: jdbc:h2:mem:~/MusinSaApplication
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/musinsa?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  sql:
+    init:
+      mode: always
+      platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+#  h2:
+#    console:
+#      enabled: true
+---
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/musinsa?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password:
+  config:
+    activate:
+      on-profile: test
+  sql:
+    init:
+      mode: always
+      platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+---
