@@ -1,36 +1,99 @@
-INSERT INTO brand (brand_id, brand_name) VALUES (1, 'A');
-INSERT INTO brand (brand_id, brand_name) VALUES (2, 'B');
-INSERT INTO brand (brand_id, brand_name) VALUES (3, 'C');
-INSERT INTO brand (brand_id, brand_name) VALUES (4, 'D');
-INSERT INTO brand (brand_id, brand_name) VALUES (5, 'E');
-INSERT INTO brand (brand_id, brand_name) VALUES (6, 'F');
-INSERT INTO brand (brand_id, brand_name) VALUES (7, 'G');
-INSERT INTO brand (brand_id, brand_name) VALUES (8, 'H');
-INSERT INTO brand (brand_id, brand_name) VALUES (9, 'I');
+insert into brand (brand_id, brand_name, brand_status) values (1, 'A', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (2, 'B', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (3, 'C', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (4, 'D', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (5, 'E', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (6, 'F', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (7, 'G', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (8, 'H', 'SERVICED');
+insert into brand (brand_id, brand_name, brand_status) values (9, 'I', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (1, 'A', 11200, 5500, 4200, 9000, 2000, 1700, 1800, 2300, 37700);
+-- brandId - 1
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 11200, 'TOP', 'A_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 5500, 'OUTER', 'A_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 4200, 'BOTTOM', 'A_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 9000, 'SNEAKERS', 'A_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 2000, 'BAG', 'A_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 1700, 'HAT', 'A_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 1800, 'SOCKS', 'A_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (1, 2300, 'ACCESSORY', 'A_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (2, 'B', 10500, 5900, 3800, 9100, 2100, 2000, 2000, 2200, 37600);
+-- brandId - 2
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 10500, 'TOP', 'B_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 5900, 'OUTER', 'B_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 3800, 'BOTTOM', 'B_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 9100, 'SNEAKERS', 'B_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 2100, 'BAG', 'B_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 2000, 'HAT', 'B_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 2000, 'SOCKS', 'B_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (2, 2200, 'ACCESSORY', 'B_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (3, 'C', 10000, 6200, 3300, 9200, 2200, 1900, 2200, 2100, 37100);
+-- brandId - 3
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 10000, 'TOP', 'C_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 6200, 'OUTER', 'C_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 3300, 'BOTTOM', 'C_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 9200, 'SNEAKERS', 'C_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 2200, 'BAG', 'C_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 1900, 'HAT', 'C_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 2200, 'SOCKS', 'C_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (3, 2100, 'ACCESSORY', 'C_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (4, 'D', 10100, 5100, 3000, 9500, 2500, 1500, 2400, 2000, 36100);
+-- brandId - 4
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 10100, 'TOP', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 5100, 'OUTER', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 3000, 'BOTTOM', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 9500, 'SNEAKERS', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 2500, 'BAG', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 1500, 'HAT', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 2400, 'SOCKS', 'D_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (4, 2000, 'ACCESSORY', 'D_1', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (5, 'E', 10700, 5000, 3800, 9900, 2300, 1800, 2100, 2100, 37700);
+-- brandId - 5
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 10700, 'TOP', 'E_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 5000, 'OUTER', 'E_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 3800, 'BOTTOM', 'E_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 9900, 'SNEAKERS', 'E_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 2300, 'BAG', 'E_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 1800, 'HAT', 'E_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 2100, 'SOCKS', 'E_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (5, 2100, 'ACCESSORY', 'E_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (6, 'F', 11200, 7200, 4000, 9300, 2100, 1600, 2300, 1900, 39600);
+-- brandId - 6
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 11200, 'TOP', 'F_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 7200, 'OUTER', 'F_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 4000, 'BOTTOM', 'F_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 9300, 'SNEAKERS', 'F_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 2100, 'BAG', 'F_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 1600, 'HAT', 'F_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 2300, 'SOCKS', 'F_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (6, 1900, 'ACCESSORY', 'F_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (7, 'G', 10500, 5800, 3900, 9000, 2200, 1700, 2100, 2000, 37200);
+-- brandId - 7
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 10500, 'TOP', 'G_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 5800, 'OUTER', 'G_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 3900, 'BOTTOM', 'G_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 9000, 'SNEAKERS', 'G_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 2200, 'BAG', 'G_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 1700, 'HAT', 'G_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 2100, 'SOCKS', 'G_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (7, 2000, 'ACCESSORY', 'G_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (8, 'H', 10800, 6300, 3100, 9700, 2100, 1600, 2000, 2000, 37600);
+-- brandId - 8
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 10800, 'TOP', 'H_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 6300, 'OUTER', 'H_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 3100, 'BOTTOM', 'H_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 9700, 'SNEAKERS', 'H_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 2100, 'BAG', 'H_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 1600, 'HAT', 'H_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 2000, 'SOCKS', 'H_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (8, 2000, 'ACCESSORY', 'H_8', 'SERVICED');
 
-INSERT INTO brand_category_price (brand_id, brand_name,  top_price, outer_price, bottom_price, sneakers_price, bag_price, hat_price, socks_price, accessory_price, total_price)
-VALUES (9, 'I', 11400, 6700, 3200, 9500, 2400, 1700, 1700, 2400, 39000);
+-- brandId - 9
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 11400, 'TOP', 'I_1', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 6700, 'OUTER', 'I_2', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 3200, 'BOTTOM', 'I_3', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 9500, 'SNEAKERS', 'I_4', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 2400, 'BAG', 'I_5', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 1700, 'HAT', 'I_6', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 1700, 'SOCKS', 'I_7', 'SERVICED');
+insert into product (brand_id, product_price, category_type, product_name, product_status) values (9, 2400, 'ACCESSORY', 'I_8', 'SERVICED');
